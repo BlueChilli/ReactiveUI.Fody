@@ -20,3 +20,4 @@ ReactiveUI.Fody.Tests/obj/
 Weavers/bin/Weavers.dll
 Weavers/bin/Weavers.pdb
 _ReSharper.Caches
+.vs/

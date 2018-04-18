@@ -15,12 +15,10 @@ namespace ReactiveUI.Fody.Tests.Issues
             try
             {
                 GlobalSettings.IsLogPropertyOnErrorEnabled = true;
-
                 try
                 {
                     var model = new ReactivePropertyModel();
                     model.MyProperty = "foo";
-                    Assert.Fail();
                 }
                 catch (LogPropertyOnErrorException ex)
                 {
@@ -43,7 +41,6 @@ namespace ReactiveUI.Fody.Tests.Issues
                 try
                 {
                     new ObservableAsPropertyModel();
-                    Assert.Fail();
                 }
                 catch (UnhandledErrorException ex)
                 {

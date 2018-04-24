@@ -16,8 +16,8 @@ mkdir lib\Xamarin.iOS10
 mkdir lib\MonoAndroid
 REM mkdir "lib\portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10"
 
-copy ..\..\ReactiveUI.Fody\bin\Release\ReactiveUI.Fody.* lib
-copy ..\..\ReactiveUI.Fody.Helpers.Ios\bin\iPhone\Release\ReactiveUI.Fody.Helpers.* lib\Xamarin.iOS10
+copy ..\..\ReactiveUI.Fody\bin\Release\ReactiveUI.Fody.* .
+copy ..\..\ReactiveUI.Fody.Helpers.Ios\bin\iPhone\Debug\ReactiveUI.Fody.Helpers.* lib\Xamarin.iOS10
 REM copy ..\..\ReactiveUI.Fody.1.0.26\lib\Xamarin.iOS10\ReactiveUI.Fody.Helpers.* lib\Xamarin.iOS10
 copy ..\..\ReactiveUI.Fody.Helpers.Net45\bin\Release\ReactiveUI.Fody.Helpers.* lib\net45
 REM copy ..\..\ReactiveUI.Fody.Helpers.Pcl\bin\Debug\ReactiveUI.Fody.Helpers.* "lib\portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10"

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\obj\project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\onikiri\.nuget\packages\;C:\Program Files (x86)\Microsoft SDKs\NuGetPackagesFallback\;C:\Program Files\dotnet\sdk\NuGetFallbackFolder</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">4.6.2</NuGetToolVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == '' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)msbuild.sdk.extras\1.3.1\buildMultiTargeting\MSBuild.Sdk.Extras.props" Condition="Exists('$(NuGetPackageRoot)msbuild.sdk.extras\1.3.1\buildMultiTargeting\MSBuild.Sdk.Extras.props')" />
+    <Import Project="$(NuGetPackageRoot)fodypackaging\2.4.5\buildMultiTargeting\FodyPackaging.props" Condition="Exists('$(NuGetPackageRoot)fodypackaging\2.4.5\buildMultiTargeting\FodyPackaging.props')" />
+  </ImportGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net452' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)msbuild.sdk.extras\1.3.1\build\MSBuild.Sdk.Extras.props" Condition="Exists('$(NuGetPackageRoot)msbuild.sdk.extras\1.3.1\build\MSBuild.Sdk.Extras.props')" />
+    <Import Project="$(NuGetPackageRoot)fodypackaging\2.4.5\build\FodyPackaging.props" Condition="Exists('$(NuGetPackageRoot)fodypackaging\2.4.5\build\FodyPackaging.props')" />
+  </ImportGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net46' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)msbuild.sdk.extras\1.3.1\build\MSBuild.Sdk.Extras.props" Condition="Exists('$(NuGetPackageRoot)msbuild.sdk.extras\1.3.1\build\MSBuild.Sdk.Extras.props')" />
+    <Import Project="$(NuGetPackageRoot)fodypackaging\2.4.5\build\FodyPackaging.props" Condition="Exists('$(NuGetPackageRoot)fodypackaging\2.4.5\build\FodyPackaging.props')" />
+  </ImportGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'netstandard1.4' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)msbuild.sdk.extras\1.3.1\build\MSBuild.Sdk.Extras.props" Condition="Exists('$(NuGetPackageRoot)msbuild.sdk.extras\1.3.1\build\MSBuild.Sdk.Extras.props')" />
+    <Import Project="$(NuGetPackageRoot)fodypackaging\2.4.5\build\FodyPackaging.props" Condition="Exists('$(NuGetPackageRoot)fodypackaging\2.4.5\build\FodyPackaging.props')" />
+  </ImportGroup>
+</Project>

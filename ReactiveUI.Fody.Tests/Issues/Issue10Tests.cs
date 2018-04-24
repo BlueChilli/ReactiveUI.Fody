@@ -1,19 +1,18 @@
 ﻿using System;
-using NUnit.Framework;
+using Xunit;
 using ReactiveUI.Fody.Helpers;
 
 namespace ReactiveUI.Fody.Tests.Issues
 {
-    [TestFixture]
     public class Issue10Tests
     {
-        [Test]
+        [Fact]
         public void UninitializedObservableAsPropertyHelperDoesntThrowAndReturnsDefaultValue()
         {
             var model = new TestModel();
-            Assert.AreEqual(null, model.MyProperty);
-            Assert.AreEqual(0, model.MyIntProperty);
-            Assert.AreEqual(default(DateTime), model.MyDateTimeProperty);
+            Assert.Null(model.MyProperty);
+            Assert.Equal(0, model.MyIntProperty);
+            Assert.Equal(default(DateTime), model.MyDateTimeProperty);
         }
 
         class TestModel : ReactiveObject

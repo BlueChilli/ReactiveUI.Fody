@@ -1,13 +1,13 @@
 ﻿using System;
 using System.ComponentModel;
-using NUnit.Framework;
 using ReactiveUI.Fody.Helpers;
+using Xunit;
 
 namespace ReactiveUI.Fody.Tests
 {
     public class ReactiveDependencyTests
     {
-        [Test]
+        [Fact]
         public void IntPropertyOnWeavedFacadeReturnsBaseModelIntPropertyDefaultValueTest()
         {
             var model = new BaseModel();
@@ -15,10 +15,10 @@ namespace ReactiveUI.Fody.Tests
 
             var facade = new FacadeModel(model);
 
-            Assert.AreEqual(expectedResult, facade.IntProperty);
+            Assert.Equal(expectedResult, facade.IntProperty);
         }
 
-        [Test]
+        [Fact]
         public void AnotherStringPropertyOnFacadeReturnsBaseModelStringPropertyDefaultValueTest()
         {
             var model = new BaseModel();
@@ -26,10 +26,10 @@ namespace ReactiveUI.Fody.Tests
 
             var facade = new FacadeModel(model);
 
-            Assert.AreEqual(expectedResult, facade.AnotherStringProperty);
+            Assert.Equal(expectedResult, facade.AnotherStringProperty);
         }
 
-        [Test]
+        [Fact]
         public void SettingAnotherStringPropertyUpdatesTheDependencyStringProperty()
         {
             var expectedResult = "New String Value";
@@ -37,10 +37,10 @@ namespace ReactiveUI.Fody.Tests
 
             facade.AnotherStringProperty = expectedResult;
 
-            Assert.AreEqual(expectedResult, facade.Dependency.StringProperty);
+            Assert.Equal(expectedResult, facade.Dependency.StringProperty);
         }
 
-        [Test]
+        [Fact]
         public void SettingFacadeIntPropertyUpdatesDependencyIntProperty()
         {
             var expectedResult = 999;
@@ -48,10 +48,10 @@ namespace ReactiveUI.Fody.Tests
 
             facade.IntProperty = expectedResult;
 
-            Assert.AreEqual(expectedResult, facade.Dependency.IntProperty);
+            Assert.Equal(expectedResult, facade.Dependency.IntProperty);
         }
 
-        [Test]
+        [Fact]
         public void FacadeIntPropertyChangedEventFiresOnAssignementTest()
         {
             var expectedPropertyChanged = "IntProperty";
@@ -64,10 +64,10 @@ namespace ReactiveUI.Fody.Tests
 
             facade.IntProperty = 999;
 
-            Assert.AreEqual(expectedPropertyChanged, resultPropertyChanged);
+            Assert.Equal(expectedPropertyChanged, resultPropertyChanged);
         }
 
-        [Test]
+        [Fact]
         public void FacadeAnotherStringPropertyChangedEventFiresOnAssignementTest()
         {
             var expectedPropertyChanged = "AnotherStringProperty";
@@ -80,10 +80,10 @@ namespace ReactiveUI.Fody.Tests
 
             facade.AnotherStringProperty = "Some New Value";
 
-            Assert.AreEqual(expectedPropertyChanged, resultPropertyChanged);
+            Assert.Equal(expectedPropertyChanged, resultPropertyChanged);
         }
 
-        [Test]
+        [Fact]
         public void StringPropertyOnWeavedDecoratorReturnsBaseModelDefaultStringValue()
         {
             var model = new BaseModel();
@@ -91,10 +91,10 @@ namespace ReactiveUI.Fody.Tests
 
             var decorator = new DecoratorModel(model);
 
-            Assert.AreEqual(expectedResult, decorator.StringProperty);
+            Assert.Equal(expectedResult, decorator.StringProperty);
         }
 
-        [Test]
+        [Fact]
         public void DecoratorStringPropertyRaisesPropertyChanged()
         {
             var expectedPropertyChanged = "StringProperty";
@@ -107,7 +107,7 @@ namespace ReactiveUI.Fody.Tests
 
             decorator.StringProperty = "Some New Value";
 
-            Assert.AreEqual(expectedPropertyChanged, resultPropertyChanged);
+            Assert.Equal(expectedPropertyChanged, resultPropertyChanged);
         }
     }
 

@@ -1,4 +1,4 @@
-﻿using NUnit.Framework;
+﻿using Xunit;
 using ReactiveUI.Fody.Helpers;
 using System;
 using System.Collections.Generic;
@@ -9,14 +9,13 @@ using System.Threading.Tasks;
 
 namespace ReactiveUI.Fody.Tests.Issues
 {
-    [TestFixture]
     public class Issue13Tests
     {
-        [Test]
+        [Fact]
         public void AccessingAChainedObservableAsPropertyOfDoubleDoesntThrow()
         {
             var vm = new VM();
-            Assert.AreEqual(0.0, vm.P2);
+            Assert.Equal(0.0, vm.P2);
         }
 
         class VM : ReactiveObject

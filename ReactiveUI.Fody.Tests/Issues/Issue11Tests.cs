@@ -1,17 +1,16 @@
 ﻿using System.Reactive.Linq;
-using NUnit.Framework;
+using Xunit;
 using ReactiveUI.Fody.Helpers;
 
 namespace ReactiveUI.Fody.Tests.Issues
 {
-    [TestFixture]
     public class Issue11Tests
     {
-        [Test]
+        [Fact]
         public void AllowObservableAsPropertyAttributeOnAccessor()
         {
             var model = new TestModel("foo");
-            Assert.AreEqual("foo", model.MyProperty);
+            Assert.Equal("foo", model.MyProperty);
         }
 
         public class TestModel : ReactiveObject

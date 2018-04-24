@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using NUnit.Framework;
+using Xunit;
 using ReactiveUI.Fody.Helpers;
 
 namespace ReactiveUI.Fody.Tests.Issues
 {
-    [TestFixture]
     public class Issue41Tests
     {
-        [Test]
+        [Fact]
         public void PropertyChangedRaisedForDerivedPropertyOnIntPropertySet()
         {
             // Arrange
@@ -24,10 +23,10 @@ namespace ReactiveUI.Fody.Tests.Issues
             model.IntProperty = 5;
 
             // Assert
-            Assert.IsTrue(receivedInpcPropertyNames.Contains(expectedInpcPropertyName));
+            Assert.Contains(expectedInpcPropertyName, receivedInpcPropertyNames);
         }
 
-        [Test]
+        [Fact]
         public void PropertyChangedRaisedOnStringPropertySet()
         {
             // Arrange
@@ -42,10 +41,10 @@ namespace ReactiveUI.Fody.Tests.Issues
             model.StringProperty = "Foo";
 
             // Assert
-            Assert.IsTrue(receivedInpcPropertyNames.Contains(expectedInpcPropertyName));
+            Assert.Contains(expectedInpcPropertyName, receivedInpcPropertyNames);
         }
 
-        [Test]
+        [Fact]
         public void PropertyChangedRaisedForDerivedPropertyAndAnotherExpressionBodiedPropertyAndCombinedExpressionBodyPropertyWithAutoPropOnIntPropertySet()
         {
             // Arrange
@@ -62,12 +61,12 @@ namespace ReactiveUI.Fody.Tests.Issues
             model.IntProperty = 5;
 
             // Assert
-            Assert.IsTrue(receivedInpcPropertyNames.Contains(expectedInpcPropertyName1));
-            Assert.IsTrue(receivedInpcPropertyNames.Contains(expectedInpcPropertyName2));
-            Assert.IsTrue(receivedInpcPropertyNames.Contains(expectedInpcPropertyName3));
+            Assert.Contains(expectedInpcPropertyName1, receivedInpcPropertyNames);
+            Assert.Contains(expectedInpcPropertyName2, receivedInpcPropertyNames);
+            Assert.Contains(expectedInpcPropertyName3, receivedInpcPropertyNames);
         }
 
-        [Test]
+        [Fact]
         public void PropertyChangedRaisedForCombinedExpressionBodyPropertyWithAutoPropOnStringPropertySet()
         {
             // Arrange
@@ -82,10 +81,10 @@ namespace ReactiveUI.Fody.Tests.Issues
             model.StringProperty = "Foo";
 
             // Assert
-            Assert.IsTrue(receivedInpcPropertyNames.Contains(expectedInpcPropertyName));
+            Assert.Contains(expectedInpcPropertyName, receivedInpcPropertyNames);
         }
 
-        [Test]
+        [Fact]
         public void PropertyChangedRaisedForCombinedExpressionBodyPropertyWithAutoPropNonReactivePropertyOnIntPropertySet()
         {
             // Arrange
@@ -100,16 +99,16 @@ namespace ReactiveUI.Fody.Tests.Issues
             model.IntProperty = 5;
 
             // Assert
-            Assert.IsTrue(receivedInpcPropertyNames.Contains(expectedInpcPropertyName));
+            Assert.Contains(expectedInpcPropertyName, receivedInpcPropertyNames);
         }
 
-        [Test]
+        [Fact]
         // Ensure that this only works with dependent properties that have the [Reactive] attribute
         public void PropertyChangedNotRaisedForCombinedExpressionBodyPropertyWithAutoPropNonReactivePropertyOnNonReactivePropertySet()
         {
             // Arrange
             var model = new TestModel();
-            var expectedInpcPropertyName = nameof(TestModel.CombinedExpressionBodyPropertyWithAutoPropNonReactiveProperty);
+           // var expectedInpcPropertyName = nameof(TestModel.CombinedExpressionBodyPropertyWithAutoPropNonReactiveProperty);
             var receivedInpcPropertyNames = new List<string>();
 
             var inpc = (INotifyPropertyChanged)model;
@@ -119,7 +118,7 @@ namespace ReactiveUI.Fody.Tests.Issues
             model.NonReactiveProperty = "Foo";
 
             // Assert
-            Assert.IsEmpty(receivedInpcPropertyNames);
+            Assert.Empty(receivedInpcPropertyNames);
         }
 
         class TestModel : ReactiveObject

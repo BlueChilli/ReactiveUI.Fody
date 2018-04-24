@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Reactive.Linq;
-using NUnit.Framework;
+using Xunit;
 using ReactiveUI.Fody.Helpers;
 using GlobalSettings = ReactiveUI.Fody.Helpers.Settings.GlobalSettings;
 
 namespace ReactiveUI.Fody.Tests.Issues
 {
-    [TestFixture]
     public class Issue31Tests
     {
-        [Test]
+        [Fact]
         public void ExceptionPropertyInfoForReactiveProperty()
         {
             try
@@ -22,7 +21,7 @@ namespace ReactiveUI.Fody.Tests.Issues
                 }
                 catch (LogPropertyOnErrorException ex)
                 {
-                    Assert.AreEqual(nameof(ObservableAsPropertyModel.MyProperty), ex.Property);
+                    Assert.Equal(nameof(ObservableAsPropertyModel.MyProperty), ex.Property);
                 }
             }
             finally
@@ -31,7 +30,7 @@ namespace ReactiveUI.Fody.Tests.Issues
             }
         }
 
-        [Test]
+        [Fact]
         public void ExceptionPropertyInfoForObservableAsProperty()
         {
             try
@@ -45,7 +44,7 @@ namespace ReactiveUI.Fody.Tests.Issues
                 catch (UnhandledErrorException ex)
                 {
                     var propertyException = (LogPropertyOnErrorException)ex.InnerException;
-                    Assert.AreEqual(nameof(ObservableAsPropertyModel.MyProperty), propertyException.Property);
+                    Assert.Equal(nameof(ObservableAsPropertyModel.MyProperty), propertyException.Property);
                 }
             }
             finally

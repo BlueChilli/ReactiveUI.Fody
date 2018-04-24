@@ -1,16 +1,16 @@
 ﻿using System.Reactive.Linq;
-using NUnit.Framework;
 using ReactiveUI.Fody.Helpers;
+using Xunit;
 
 namespace ReactiveUI.Fody.Tests
 {
     public class ObservableAsPropertyTests
     {
-        [Test]
+        [Fact]
         public void TestPropertyReturnsFoo()
         {
             var model = new TestModel();
-            Assert.AreEqual("foo", model.TestProperty);
+            Assert.Equal("foo", model.TestProperty);
         }
 
         class TestModel : ReactiveObject

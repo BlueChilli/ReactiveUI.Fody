@@ -7,17 +7,13 @@
     <Import Project="$(NuGetPackageRoot)msbuild.sdk.extras\1.3.1\buildMultiTargeting\MSBuild.Sdk.Extras.targets" Condition="Exists('$(NuGetPackageRoot)msbuild.sdk.extras\1.3.1\buildMultiTargeting\MSBuild.Sdk.Extras.targets')" />
     <Import Project="$(NuGetPackageRoot)fodypackaging\2.4.5\buildMultiTargeting\FodyPackaging.targets" Condition="Exists('$(NuGetPackageRoot)fodypackaging\2.4.5\buildMultiTargeting\FodyPackaging.targets')" />
   </ImportGroup>
-  <ImportGroup Condition=" '$(TargetFramework)' == 'net452' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net462' AND '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)msbuild.sdk.extras\1.3.1\build\MSBuild.Sdk.Extras.targets" Condition="Exists('$(NuGetPackageRoot)msbuild.sdk.extras\1.3.1\build\MSBuild.Sdk.Extras.targets')" />
     <Import Project="$(NuGetPackageRoot)fodypackaging\2.4.5\build\FodyPackaging.targets" Condition="Exists('$(NuGetPackageRoot)fodypackaging\2.4.5\build\FodyPackaging.targets')" />
     <Import Project="$(NuGetPackageRoot)fody\2.4.5\build\Fody.targets" Condition="Exists('$(NuGetPackageRoot)fody\2.4.5\build\Fody.targets')" />
   </ImportGroup>
-  <ImportGroup Condition=" '$(TargetFramework)' == 'net46' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)msbuild.sdk.extras\1.3.1\build\MSBuild.Sdk.Extras.targets" Condition="Exists('$(NuGetPackageRoot)msbuild.sdk.extras\1.3.1\build\MSBuild.Sdk.Extras.targets')" />
-    <Import Project="$(NuGetPackageRoot)fodypackaging\2.4.5\build\FodyPackaging.targets" Condition="Exists('$(NuGetPackageRoot)fodypackaging\2.4.5\build\FodyPackaging.targets')" />
-    <Import Project="$(NuGetPackageRoot)fody\2.4.5\build\Fody.targets" Condition="Exists('$(NuGetPackageRoot)fody\2.4.5\build\Fody.targets')" />
-  </ImportGroup>
-  <ImportGroup Condition=" '$(TargetFramework)' == 'netstandard1.4' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+  <ImportGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="C:\Program Files (x86)\Microsoft SDKs\NuGetPackagesFallback\netstandard.library\2.0.1\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('C:\Program Files (x86)\Microsoft SDKs\NuGetPackagesFallback\netstandard.library\2.0.1\build\netstandard2.0\NETStandard.Library.targets')" />
     <Import Project="$(NuGetPackageRoot)msbuild.sdk.extras\1.3.1\build\MSBuild.Sdk.Extras.targets" Condition="Exists('$(NuGetPackageRoot)msbuild.sdk.extras\1.3.1\build\MSBuild.Sdk.Extras.targets')" />
     <Import Project="$(NuGetPackageRoot)fodypackaging\2.4.5\build\FodyPackaging.targets" Condition="Exists('$(NuGetPackageRoot)fodypackaging\2.4.5\build\FodyPackaging.targets')" />
     <Import Project="$(NuGetPackageRoot)fody\2.4.5\build\Fody.targets" Condition="Exists('$(NuGetPackageRoot)fody\2.4.5\build\Fody.targets')" />

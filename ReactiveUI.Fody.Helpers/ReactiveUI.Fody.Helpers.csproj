@@ -1,15 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net452;net46;netstandard1.4</TargetFrameworks>
+    <TargetFrameworks>net462;netstandard2.0;</TargetFrameworks>
     <Authors>kirk</Authors>
     <GenerateDocumentationFile>false</GenerateDocumentationFile>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ReactiveUI" Version="8.0.0-alpha0117" />
+    <PackageReference Include="ReactiveUI" Version="8.0.0" />
     <PackageReference Include="System.Reactive" Version="3.1.1" />
     <PackageReference Include="Fody" Version="2.4.5" PrivateAssets="None" />
     <PackageReference Include="FodyPackaging" Version="2.4.5" PrivateAssets="All" />

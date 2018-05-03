@@ -1,0 +1,9 @@
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\bin\Release\netstandard2.0\ReactiveUI.Fody.Helpers.deps.json
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\bin\Release\netstandard2.0\ReactiveUI.Fody.Helpers.dll
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\bin\Release\netstandard2.0\ReactiveUI.Fody.Helpers.pdb
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\obj\Release\netstandard2.0\ReactiveUI.Fody.Helpers.csproj.CoreCompileInputs.cache
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\obj\Release\netstandard2.0\ReactiveUI.Fody.Helpers.AssemblyInfoInputs.cache
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\obj\Release\netstandard2.0\ReactiveUI.Fody.Helpers.AssemblyInfo.cs
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\obj\Release\netstandard2.0\ReactiveUI.Fody.Helpers.dll
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\obj\Release\netstandard2.0\ReactiveUI.Fody.Helpers.pdb
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\obj\Release\netstandard2.0\ReactiveUI.Fody.Helpers.csprojResolveAssemblyReference.cache

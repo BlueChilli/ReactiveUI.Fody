@@ -1,0 +1,17 @@
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\bin\Release\net462\ReactiveUI.Fody.Helpers.dll
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\bin\Release\net462\ReactiveUI.Fody.Helpers.pdb
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\bin\Release\net462\ReactiveUI.dll
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\bin\Release\net462\Splat.dll
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\bin\Release\net462\System.Drawing.Primitives.dll
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\bin\Release\net462\System.Reactive.Core.dll
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\bin\Release\net462\System.Reactive.Interfaces.dll
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\bin\Release\net462\System.Reactive.Linq.dll
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\bin\Release\net462\System.Reactive.PlatformServices.dll
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\bin\Release\net462\System.Reactive.Windows.Threading.dll
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\obj\Release\net462\ReactiveUI.Fody.Helpers.csproj.CoreCompileInputs.cache
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\obj\Release\net462\ReactiveUI.Fody.Helpers.AssemblyInfoInputs.cache
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\obj\Release\net462\ReactiveUI.Fody.Helpers.AssemblyInfo.cs
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\obj\Release\net462\ReactiveUI.Fody.Helpers.csproj.CopyComplete
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\obj\Release\net462\ReactiveUI.Fody.Helpers.dll
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\obj\Release\net462\ReactiveUI.Fody.Helpers.pdb
+C:\Projects\ReactiveUI.Fody\ReactiveUI.Fody.Helpers\obj\Release\net462\ReactiveUI.Fody.Helpers.csprojResolveAssemblyReference.cache

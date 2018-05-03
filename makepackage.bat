@@ -11,18 +11,12 @@ copy ..\Nuget.exe .
 copy ..\ReactiveUIFody.nuspec .
 
 mkdir lib
-mkdir lib\net45
-mkdir lib\Xamarin.iOS10
-mkdir lib\MonoAndroid
-REM mkdir "lib\portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10"
+mkdir lib\net462
+mkdir lib\netstandard2.0
 
-copy ..\..\ReactiveUI.Fody\bin\Release\ReactiveUI.Fody.* .
-copy ..\..\ReactiveUI.Fody.Helpers.Ios\bin\iPhone\Debug\ReactiveUI.Fody.Helpers.* lib\Xamarin.iOS10
-REM copy ..\..\ReactiveUI.Fody.1.0.26\lib\Xamarin.iOS10\ReactiveUI.Fody.Helpers.* lib\Xamarin.iOS10
-copy ..\..\ReactiveUI.Fody.Helpers.Net45\bin\Release\ReactiveUI.Fody.Helpers.* lib\net45
-REM copy ..\..\ReactiveUI.Fody.Helpers.Pcl\bin\Debug\ReactiveUI.Fody.Helpers.* "lib\portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10"
-copy ..\..\ReactiveUI.Fody.Helpers.Android\bin\Release\ReactiveUI.Fody.Helpers.* lib\MonoAndroid
-REM copy ..\..\ReactiveUI.Fody.1.0.26\lib\MonoAndroid\ReactiveUI.Fody.Helpers.* lib\MonoAndroid
+copy ..\..\ReactiveUI.Fody\bin\Release\netstandard2.0\ReactiveUI.Fody.* .
+copy ..\..\ReactiveUI.Fody.Helpers\bin\Release\net46\ReactiveUI.Fody.Helpers.* lib\net462
+copy ..\..\ReactiveUI.Fody.Helpers\bin\Release\netstandard2.0\ReactiveUI.Fody.Helpers.* lib\netstandard2.0
 
 
 nuget pack ReactiveUIFody.nuspec

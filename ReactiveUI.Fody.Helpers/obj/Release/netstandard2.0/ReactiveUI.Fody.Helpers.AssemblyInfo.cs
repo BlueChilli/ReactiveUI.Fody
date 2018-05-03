@@ -12,7 +12,7 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("kirk")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("2.2.17.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.2.17")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReactiveUI.Fody.Helpers")]
